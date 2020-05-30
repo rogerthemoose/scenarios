@@ -1,0 +1,6 @@
+{:paths   ["src"]
+ :deps    {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :aliases {:test {:extra-deps  {midje {:mvn/version "1.9.9"}}
+                  :extra-paths ["test"]}
+           :once {:main-opts ["-m" "rogerthemoose.runner"]}
+           :auto {:main-opts ["-m" "rogerthemoose.runner" "auto"]}}}
